@@ -18,13 +18,34 @@ body {
 .header {
   display: flex;
   align-items: center;
-  padding: 15px 30px;
+  padding: 12px 30px;
   background-color: #ffffff;
-  border-bottom: 2px solid #003366;
+  border-bottom: 3px solid #003366;
 }
 
+.header-text h1 {
+  margin: 0;
+  font-size: 19px;
+  font-weight: bold;
+  color: #000;
+}
+
+.header-text h2 {
+  margin: 3px 0;
+  font-size: 15px;
+  font-weight: normal;
+}
+
+.header-text p {
+  margin: 0;
+  font-size: 12px;
+  color: #333;
+}
+
+
 .logo img {
-  height: 70px;
+  height: 60px;        /* CONTROLLED SIZE */
+  width: auto;
   margin-right: 20px;
 }
 
