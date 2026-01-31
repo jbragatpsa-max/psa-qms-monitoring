@@ -1,11 +1,20 @@
-/* RESET */
+/* =========================
+   GLOBAL RESET & BASE
+========================= */
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
   background-color: #f4f4f4;
+  color: #000;
 }
 
-/* HEADER */
+/* =========================
+   HEADER
+========================= */
 .header {
   display: flex;
   align-items: center;
@@ -15,17 +24,18 @@ body {
 }
 
 .logo img {
-  height: 65px;
+  height: 70px;
   margin-right: 20px;
 }
 
 .header-text h1 {
   margin: 0;
   font-size: 20px;
+  font-weight: bold;
 }
 
 .header-text h2 {
-  margin: 5px 0;
+  margin: 4px 0;
   font-size: 15px;
   font-weight: normal;
 }
@@ -35,13 +45,17 @@ body {
   font-size: 13px;
 }
 
-/* LAYOUT */
+/* =========================
+   MAIN LAYOUT
+========================= */
 .container {
   display: flex;
   min-height: calc(100vh - 140px);
 }
 
-/* SIDEBAR */
+/* =========================
+   SIDEBAR NAVIGATION
+========================= */
 .sidebar {
   width: 260px;
   background-color: #003366;
@@ -51,6 +65,11 @@ body {
 .sidebar ul {
   list-style: none;
   padding: 0;
+  margin: 0;
+}
+
+.sidebar ul li {
+  margin-bottom: 2px;
 }
 
 .sidebar ul li a {
@@ -65,18 +84,49 @@ body {
   background-color: #00509e;
 }
 
-/* CONTENT */
+/* =========================
+   MAIN CONTENT AREA
+========================= */
 .content {
   flex: 1;
   padding: 30px;
   background-color: #ffffff;
 }
 
-/* FOOTER */
+.content h2 {
+  margin-top: 0;
+  font-size: 18px;
+}
+
+/* =========================
+   TABLES (for QMS Monitoring)
+========================= */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+table th,
+table td {
+  border: 1px solid #cccccc;
+  padding: 8px 10px;
+  text-align: left;
+}
+
+table th {
+  background-color: #eaeaea;
+  font-weight: bold;
+}
+
+/* =========================
+   FOOTER
+========================= */
 .footer {
   text-align: center;
   padding: 10px;
   font-size: 12px;
   background-color: #eaeaea;
-  border-top: 1px solid #ccc;
+  border-top: 1px solid #cccccc;
 }
