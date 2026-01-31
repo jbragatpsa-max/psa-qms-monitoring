@@ -1,6 +1,6 @@
-/* =========================
-   GLOBAL RESET & BASE
-========================= */
+/* =====================================================
+   GLOBAL RESET & BASE STYLE
+===================================================== */
 * {
   box-sizing: border-box;
 }
@@ -8,13 +8,13 @@
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #f4f4f4;
+  background-color: #f2f2f2;
   color: #000;
 }
 
-/* =========================
-   HEADER
-========================= */
+/* =====================================================
+   HEADER (PSA OFFICIAL LOOK)
+===================================================== */
 .header {
   display: flex;
   align-items: center;
@@ -23,15 +23,20 @@ body {
   border-bottom: 3px solid #003366;
 }
 
+.logo img {
+  height: 60px;          /* CONTROL LOGO SIZE */
+  width: auto;
+  margin-right: 20px;
+}
+
 .header-text h1 {
   margin: 0;
   font-size: 19px;
   font-weight: bold;
-  color: #000;
 }
 
 .header-text h2 {
-  margin: 3px 0;
+  margin: 4px 0;
   font-size: 15px;
   font-weight: normal;
 }
@@ -42,67 +47,66 @@ body {
   color: #333;
 }
 
-/* =========================
+/* =====================================================
    MAIN LAYOUT
-========================= */
+===================================================== */
 .container {
   display: flex;
-  min-height: calc(100vh - 140px);
+  min-height: calc(100vh - 120px);
 }
 
-/* =========================
+/* =====================================================
    SIDEBAR NAVIGATION
-========================= */
+===================================================== */
 .sidebar {
-  width: 260px;
+  width: 250px;
   background-color: #003366;
-  padding-top: 20px;
+  padding-top: 15px;
 }
 
 .sidebar ul {
   list-style: none;
-  padding: 0;
   margin: 0;
-}
-
-.sidebar ul li {
-  margin-bottom: 2px;
+  padding: 0;
 }
 
 .sidebar ul li a {
   display: block;
-  padding: 12px 20px;
+  padding: 11px 18px;
   color: #ffffff;
   text-decoration: none;
-  font-size: 14px;
+  font-size: 13.5px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
 }
 
 .sidebar ul li a:hover {
   background-color: #00509e;
 }
 
-/* =========================
+/* =====================================================
    MAIN CONTENT AREA
-========================= */
+===================================================== */
 .content {
   flex: 1;
-  padding: 30px;
+  padding: 30px 40px;
   background-color: #ffffff;
 }
 
 .content h2 {
   margin-top: 0;
   font-size: 18px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid #cccccc;
 }
 
-/* =========================
-   TABLES (for QMS Monitoring)
-========================= */
+/* =====================================================
+   TABLES (QMS / ISO MONITORING)
+===================================================== */
 table {
   width: 100%;
   border-collapse: collapse;
   margin-top: 15px;
-  font-size: 14px;
+  font-size: 13.5px;
 }
 
 table th,
@@ -113,13 +117,13 @@ table td {
 }
 
 table th {
-  background-color: #eaeaea;
+  background-color: #e6e6e6;
   font-weight: bold;
 }
 
-/* =========================
+/* =====================================================
    FOOTER
-========================= */
+===================================================== */
 .footer {
   text-align: center;
   padding: 10px;
