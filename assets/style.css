@@ -42,30 +42,6 @@ body {
   color: #333;
 }
 
-
-.logo img {
-  height: 60px;        /* CONTROLLED SIZE */
-  width: auto;
-  margin-right: 20px;
-}
-
-.header-text h1 {
-  margin: 0;
-  font-size: 20px;
-  font-weight: bold;
-}
-
-.header-text h2 {
-  margin: 4px 0;
-  font-size: 15px;
-  font-weight: normal;
-}
-
-.header-text p {
-  margin: 0;
-  font-size: 13px;
-}
-
 /* =========================
    MAIN LAYOUT
 ========================= */
